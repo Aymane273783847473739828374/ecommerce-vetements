@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - VetShop</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">VetShop</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="services-client.html">Services client</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <span>🛒</span>
+        <span>❤️</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Formulaire de contact -->
+  <section class="contact-form">
+    <h1>Contactez-nous</h1>
+    <form>
+      <div class="form-group">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" required />
+      </div>
+
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="service">Service souhaité</label>
+        <select id="service" name="service" required>
+          <option value="">-- Choisissez un service --</option>
+          <option value="livraison">Livraison</option>
+          <option value="paiement">Paiement</option>
+          <option value="sav">Service après-vente</option>
+          <option value="retours">Retours</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="commentaire">Commentaire</label>
+        <textarea id="commentaire" name="commentaire" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h4>Mentions Légales</h4>
+        <p>&copy; 2025 VetShop</p>
+      </div>
+      <div>
+        <h4>Liens</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <p>Facebook | Instagram | Twitter</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

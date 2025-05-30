@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  padding: 1rem 2rem;
+  color: white;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+.navbar .icons span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+}
+.hero .hero-img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.hero .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(44, 62, 80, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+.hero .hero-content h1 {
+  font-size: 2.5rem;
+}
+.hero .hero-content .btn {
+  background: #3498db;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hero .hero-content .btn:hover {
+  background: #217dbb;
+}
+
+section {
+  padding: 2rem;
+}
+section h2, section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section .produits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+section .produits .card {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+section .produits .card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+section .produits .card p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.testimonials .avis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.testimonials .avis .temoignage {
+  max-width: 250px;
+  text-align: center;
+}
+.testimonials .avis .temoignage img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.testimonials .avis .temoignage blockquote {
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+.testimonials .avis .temoignage cite {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.categories {
+  background: white;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 2rem;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .footer-content div {
+  margin: 1rem;
+}
+footer .footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-content ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.pagination a {
+  text-decoration: none;
+  background: white;
+  color: #2c3e50;
+  padding: 0.5rem 1rem;
+  border: 1px solid #2c3e50;
+  border-radius: 5px;
+}
+.pagination a.active, .pagination a:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-content {
+    padding: 1rem;
+  }
+  .hero .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .produits, .grid-produits {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  .produits, .grid-produits {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  footer .footer-content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .produits, .grid-produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  footer .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */
