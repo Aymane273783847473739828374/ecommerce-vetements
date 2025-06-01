@@ -61,6 +61,23 @@ body {
     cursor: pointer;
   }
 }
+// ------------------------------
+// Style NAV quand scroll
+// ------------------------------
+.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  .nav-links li a {
+    color: #333 !important;
+  }
+
+  .logo,
+  .icons span {
+    color: #333 !important;
+  }
+}
+
 
 // ====================
 // HERO
@@ -135,7 +152,6 @@ section {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       width: 200px;
       text-align: center;
-      
 
       img {
         width: 100%;
@@ -194,11 +210,16 @@ section {
 // ASIDE / CATEGORIES
 // ====================
 .categories {
+  position: sticky;
+  top: 100px; // Ajuste selon la hauteur de ta navbar
+  z-index: 100;
   background: white;
   padding: 1rem;
   margin: 2rem;
   border-radius: 5px;
+
 }
+
 
 // ====================
 // FOOTER
@@ -293,7 +314,7 @@ footer {
   }
 }
 
-// 📱📲 Tablette
+// 📲 Tablette
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero-content {
     h1 {

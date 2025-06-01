@@ -487,8 +487,10 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
+   appearance: button;
   -webkit-appearance: button;
 }
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -544,9 +546,11 @@ legend + * {
 }
 
 [type=search] {
+  appearance: textfield;
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
+
 
 /* rtl:raw:
 [type="tel"],
@@ -566,6 +570,7 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -11988,12 +11993,16 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background: #2c3e50;
   padding: 1rem 2rem;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .navbar .logo {
   font-size: 1.5rem;
@@ -12040,6 +12049,9 @@ body {
 }
 .hero .hero-content h1, .hero .hero-content .h1 {
   font-size: 2.5rem;
+}
+.hero .hero-content p {
+  margin: 0.5rem 0;
 }
 .hero .hero-content .btn {
   background: #3498db;
@@ -12118,6 +12130,9 @@ section .produits .card p {
 }
 
 .categories {
+  position: sticky;
+  top: 100px;
+  z-index: 100;
   background: white;
   padding: 1rem;
   margin: 2rem;
@@ -12176,30 +12191,34 @@ footer .footer-content ul li a:hover {
     flex-direction: column;
     align-items: center;
   }
-  .hero .hero-content {
+  .hero-content {
     padding: 1rem;
   }
-  .hero .hero-content h1, .hero .hero-content .h1 {
+  .hero-content h1, .hero-content .h1 {
     font-size: 1.5rem;
   }
-  .produits, .grid-produits {
+  .produits {
     flex-direction: column;
     align-items: center;
   }
-  footer .footer-content {
+  .footer-content {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .hero .hero-content h1, .hero .hero-content .h1 {
+  .hero-content h1, .hero-content .h1 {
     font-size: 2rem;
   }
-  .produits, .grid-produits {
+  .produits {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  footer .footer-content {
+  .produits .card {
+    width: 45%;
+  }
+  .footer-content {
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -12208,15 +12227,17 @@ footer .footer-content ul li a:hover {
   .navbar {
     flex-direction: row;
   }
-  .produits, .grid-produits {
-    display: flex;
+  .produits {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .hero .hero-content h1, .hero .hero-content .h1 {
+  .produits .card {
+    width: 200px;
+  }
+  .hero-content h1, .hero-content .h1 {
     font-size: 2.5rem;
   }
-  footer .footer-content {
+  .footer-content {
     flex-direction: row;
     justify-content: space-between;
   }
