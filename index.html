@@ -1,113 +1,120 @@
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ma Boutique de Vêtements</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script defer src="assets/js/script.js"></script>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Ma Boutique de Vêtements</title>
+  <link rel="stylesheet" href="assets/css/style.css" >
+  <script defer src="assets/js/script.js"></script>
+</head>
+<body>
 
-    <!-- Header / Navbar -->
-    <header>
-        <nav class="navbar">
-        <div class="logo">VetShop</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="boutique.html">Boutique</a></li>
-            <li><a href="services-client.html">Services client</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="icons">
-            <span>🛒</span>
-            <span>❤️</span>
-        </div>
-        </nav>
-    </header>
+<!-- Header / Navbar Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand" href="#">VetShop</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVetShop">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <!-- Section Hero -->
-<section class="hero">
-  <img src="assets/images/banner.jpg" alt="Bannière VetShop" class="hero-img">
-  <div class="hero-content">
-    <h1>Nouvelle Collection Été 2025</h1>
-    <p>Découvrez nos vêtements tendances pour tous les styles.</p>
-    <a href="boutique.html" class="btn">Voir la boutique</a>
-  </div>
-</section>
-
-
-
-    <!-- Nouveaux Produits -->
-<section class="nouveaux-produits">
-  <h2>Nouveautés</h2>
-  <div class="produits">
-    <div class="card">
-      <img src="assets/images/new1.jpg" alt="Débardeur training">
-      <p>Débardeur training</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/new2.jpg" alt="Short sport mixte">
-      <p>Short sport mixte</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/new3.jpg" alt="T-shirt respirant">
-      <p>T-shirt respirant</p>
+  <div class="collapse navbar-collapse" id="navbarVetShop">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+      <li class="nav-item"><a class="nav-link" href="boutique.html">Boutique</a></li>
+      <li class="nav-item"><a class="nav-link" href="services-client.html">Services client</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="d-flex">
+      <span class="text-white me-3">🛒</span>
+      <span class="text-white">❤️</span>
     </div>
   </div>
+</nav>
+
+
+  <!-- Section Hero -->
+  <section class="hero">
+    <img src="assets/images/dsport.jpg" alt="Bannière VetShop" class="hero-img">
+    <div class="hero-content">
+      <h1>Nouvelle Collection Été 2025</h1>
+      <p>Découvrez nos vêtements tendances pour tous les styles.</p>
+      <a href="boutique.html" class="btn">Voir la boutique</a>
+    </div>
+  </section>
+
+  <!-- Nouveaux Produits -->
+  <section class="nouveaux-produits">
+    <h2>Nouveautés</h2>
+    <div class="produits">
+      <div class="card">
+        <img src="assets/images/jogging.jpg" alt="Débardeur training">
+        <p>Débardeur training</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/jogging.jpg" alt="Short sport mixte">
+        <p>Short sport mixte</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/jogging.jpg" alt="T-shirt respirant">
+        <p>T-shirt respirant</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produits les plus vendus -->
+  <section class="bestsellers">
+    <h2>Meilleures ventes</h2>
+    <div class="produits">
+      <div class="card">
+        <img src="assets/images/jogging.jpg" alt="Jogging performance">
+        <p>Jogging performance</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/jogging.jpg" alt="Legging confort">
+        <p>Legging confort</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/jogging.jpg" alt="Hoodie sportswear">
+        <p>Hoodie sportswear</p>
+      </div>
+    </div>
+  </section>
+
+  
+ <!-- Newsletter -->
+<section class="newsletter">
+  <h3>Inscrivez-vous à notre newsletter</h3>
+  <form action="https://formsubmit.co/your@email.com" method="POST">
+
+    <input type="email" name="email" placeholder="Votre e-mail" required>
+    <button type="submit">S'inscrire</button>
+  </form>
 </section>
 
-
-    <!-- Produits les plus vendus -->
-<section class="bestsellers">
-  <h2>Meilleures ventes</h2>
-  <div class="produits">
-    <div class="card">
-      <img src="assets/images/best1.jpg" alt="Jogging performance">
-      <p>Jogging performance</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/best2.jpg" alt="Legging confort">
-      <p>Legging confort</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/best3.jpg" alt="Hoodie sportswear">
-      <p>Hoodie sportswear</p>
-    </div>
-  </div>
-</section>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <h3>Inscrivez-vous à notre newsletter</h3>
-        <form>
-        <input type="email" placeholder="Votre e-mail" required />
-        <button type="submit">S'inscrire</button>
-        </form>
-    </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-        <div>
-            <h4>Mentions Légales</h4>
-            <p>&copy; 2025 VetShop</p>
-        </div>
-        <div>
-            <h4>Liens</h4>
-            <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Conditions</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Suivez-nous</h4>
-            <p>Facebook | Instagram | Twitter</p>
-        </div>
-        </div>
-    </footer>
+  <footer class="bg-dark text-light py-4">
+    <div class="container footer-content d-flex justify-content-between flex-wrap">
+      <div class="mb-3">
+        <h4>Mentions Légales</h4>
+        <p>&copy; 2025 VetShop</p>
+      </div>
+      <div class="mb-3">
+        <h4>Liens</h4>
+        <ul class="list-unstyled">
+          <li><a class="text-decoration-none text-light" href="index.html">Accueil</a></li>
+          <li><a class="text-decoration-none text-light" href="contact.html">Contact</a></li>
+          <li><a class="text-decoration-none text-light" href="#">Conditions</a></li>
+        </ul>
+      </div>
+      <div class="mb-3">
+        <h4>Suivez-nous</h4>
+        <p>Facebook | Instagram | Twitter</p>
+      </div>
+    </div>
+  </footer>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    </body>
-    </html>
+</body>
+</html>
+

@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services Client - VetShop</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Service Client - VetShop</title>
+  <link rel="stylesheet" href="assets/css/style.css" >
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
 </head>
 <body>
 
   <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">VetShop</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="boutique.html">Boutique</a></li>
-        <li><a href="services-client.html">Services client</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="icons">
-        <span>🛒</span>
-        <span>❤️</span>
-      </div>
-    </nav>
-  </header>
+<!-- Header / Navbar Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand" href="#">VetShop</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVetShop">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <!-- Section services -->
-  <section class="services">
-    <h1>Nos services client</h1>
-    <div class="services-list">
-      <div class="service">
-        <h3>🚚 Livraison rapide</h3>
-        <p>Livraison en 48h en France métropolitaine. Gratuite à partir de 50€ d’achat.</p>
-      </div>
-      <div class="service">
-        <h3>🔁 Retours gratuits</h3>
-        <p>Retournez vos articles gratuitement sous 30 jours, sans frais supplémentaires.</p>
-      </div>
-      <div class="service">
-        <h3>💳 Paiement sécurisé</h3>
-        <p>Nous utilisons des systèmes de paiement cryptés pour garantir votre sécurité.</p>
-      </div>
-      <div class="service">
-        <h3>📞 Service après-vente</h3>
-        <p>Notre équipe est disponible 7j/7 pour répondre à vos questions et demandes.</p>
-      </div>
+  <div class="collapse navbar-collapse" id="navbarVetShop">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+      <li class="nav-item"><a class="nav-link" href="boutique.html">Boutique</a></li>
+      <li class="nav-item"><a class="nav-link" href="services-client.html">Services client</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="d-flex">
+      <span class="text-white me-3">🛒</span>
+      <span class="text-white">❤️</span>
     </div>
-  </section>
+  </div>
+</nav>
 
+
+  <!-- Titre -->
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Service Client</h1>
+
+    <!-- Section Contact -->
+    <div class="bg-light rounded p-4 mb-4 shadow-sm text-center">
+      <h4><span class="me-2">📞</span>Contactez-nous</h4>
+      <p>Vous pouvez nous joindre par téléphone au <strong>+33 1 23 45 67 89</strong> ou par e-mail à 
+        <strong>support@vetshop.fr</strong>.
+      </p>
+    </div>
+
+    <!-- Section Retours -->
+    <div class="bg-light rounded p-4 mb-4 shadow-sm text-center">
+      <h4><span class="me-2">🔄</span>Retours & Échanges</h4>
+      <p>Vous disposez de 14 jours après réception pour retourner un article. Les produits doivent être en parfait état, avec étiquette.</p>
+    </div>
+
+    <!-- Section Livraison -->
+    <div class="bg-light rounded p-4 mb-4 shadow-sm text-center">
+      <h4><span class="me-2">🚚</span>Livraison</h4>
+      <p>Livraison sous 3 à 5 jours ouvrés. Gratuite à partir de 50€ d'achat.</p>
+    </div>
+
+    <!-- Section FAQ -->
+    <div class="bg-light rounded p-4 shadow-sm text-center">
+      <h4><span class="me-2">❓</span>FAQ</h4>
+      <ul class="list-unstyled mt-3">
+        <li>• Comment suivre ma commande ? → Un lien est envoyé par e-mail.</li>
+        <li>• Puis-je modifier mon adresse de livraison ? → Oui, avant l’expédition.</li>
+        <li>• Comment annuler ma commande ? → Contactez-nous rapidement.</li>
+      </ul>
+    </div>
+  </div>
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div>
+  <footer class="bg-dark text-light py-4">
+    <div class="container footer-content d-flex justify-content-between flex-wrap">
+      <div class="mb-3">
         <h4>Mentions Légales</h4>
         <p>&copy; 2025 VetShop</p>
       </div>
-      <div>
+      <div class="mb-3">
         <h4>Liens</h4>
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Conditions</a></li>
+        <ul class="list-unstyled">
+          <li><a class="text-decoration-none text-light" href="index.html">Accueil</a></li>
+          <li><a class="text-decoration-none text-light" href="contact.html">Contact</a></li>
+          <li><a class="text-decoration-none text-light" href="#">Conditions</a></li>
         </ul>
       </div>
-      <div>
+      <div class="mb-3">
         <h4>Suivez-nous</h4>
         <p>Facebook | Instagram | Twitter</p>
       </div>
     </div>
   </footer>
-
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,11 +1,17 @@
-// Variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// ====================
+// VARIABLES
+// ====================
 $primary-color: #2c3e50;
 $secondary-color: #3498db;
 $text-color: #333;
 $bg-light: #f9f9f9;
 $font-stack: 'Arial', sans-serif;
 
-// Reset de base
+// ====================
+// RESET + GLOBAL
+// ====================
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +25,9 @@ body {
   line-height: 1.6;
 }
 
-// Navbar
+// ====================
+// NAVBAR
+// ====================
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -54,7 +62,9 @@ body {
   }
 }
 
-// Hero Section
+// ====================
+// HERO
+// ====================
 .hero {
   position: relative;
 
@@ -81,6 +91,10 @@ body {
       font-size: 2.5rem;
     }
 
+    p {
+      margin: 0.5rem 0;
+    }
+
     .btn {
       background: $secondary-color;
       color: white;
@@ -97,7 +111,9 @@ body {
   }
 }
 
-// Sections
+// ====================
+// SECTIONS COMMUNES
+// ====================
 section {
   padding: 2rem;
 
@@ -116,9 +132,10 @@ section {
       background: white;
       padding: 1rem;
       border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       width: 200px;
       text-align: center;
+      
 
       img {
         width: 100%;
@@ -136,7 +153,9 @@ section {
   }
 }
 
-// Témoignages clients
+// ====================
+// TÉMOIGNAGES
+// ====================
 .testimonials {
   .avis {
     display: flex;
@@ -171,7 +190,9 @@ section {
   }
 }
 
-// Aside
+// ====================
+// ASIDE / CATEGORIES
+// ====================
 .categories {
   background: white;
   padding: 1rem;
@@ -179,7 +200,9 @@ section {
   border-radius: 5px;
 }
 
-// Footer
+// ====================
+// FOOTER
+// ====================
 footer {
   background: $primary-color;
   color: white;
@@ -210,7 +233,9 @@ footer {
   }
 }
 
-// Pagination
+// ====================
+// PAGINATION
+// ====================
 .pagination {
   display: flex;
   justify-content: center;
@@ -225,76 +250,94 @@ footer {
     border: 1px solid $primary-color;
     border-radius: 5px;
 
-    &.active, &:hover {
+    &.active,
+    &:hover {
       background: $primary-color;
       color: white;
     }
   }
 }
 
-// Responsive Breakpoints
+// ====================
+// RESPONSIVE DESIGN
+// ====================
+
+// 📱 Mobile
 @media (max-width: 767px) {
   .navbar {
     flex-direction: column;
+
     .nav-links {
       flex-direction: column;
       align-items: center;
     }
   }
 
-  .hero .hero-content {
+  .hero-content {
     padding: 1rem;
+
     h1 {
       font-size: 1.5rem;
     }
   }
 
-  .produits, .grid-produits {
+  .produits {
     flex-direction: column;
     align-items: center;
   }
 
-  footer .footer-content {
+  .footer-content {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }
 
+// 📱📲 Tablette
 @media (min-width: 768px) and (max-width: 1023px) {
-  .hero .hero-content {
+  .hero-content {
     h1 {
       font-size: 2rem;
     }
   }
 
-  .produits, .grid-produits {
+  .produits {
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    .card {
+      width: 45%;
+    }
   }
 
-  footer .footer-content {
+  .footer-content {
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
 
+// 💻 Desktop
 @media (min-width: 1024px) {
   .navbar {
     flex-direction: row;
   }
 
-  .produits, .grid-produits {
-    display: flex;
+  .produits {
     flex-wrap: wrap;
     justify-content: center;
+
+    .card {
+      width: 200px;
+    }
   }
 
-  .hero .hero-content h1 {
+  .hero-content h1 {
     font-size: 2.5rem;
   }
 
-  footer .footer-content {
+  .footer-content {
     flex-direction: row;
     justify-content: space-between;
   }
 }
+

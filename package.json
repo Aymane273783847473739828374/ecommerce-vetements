@@ -1,0 +1,23 @@
+{
+  "name": "ecommerce-vetements",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aymane273783847473739828374/ecommerce-vetements.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aymane273783847473739828374/ecommerce-vetements/issues"
+  },
+  "homepage": "https://github.com/Aymane273783847473739828374/ecommerce-vetements#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}

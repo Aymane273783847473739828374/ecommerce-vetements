@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>À propos - VetShop</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">VetShop</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="boutique.html">Boutique</a></li>
-        <li><a href="services-client.html">Services client</a></li>
-        <li><a href="contact.html">Contact</a></li>
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">VetShop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVetShop" aria-controls="navbarVetShop" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarVetShop">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="a-propos.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="boutique.html">Boutique</a></li>
+        <li class="nav-item"><a class="nav-link" href="services-client.html">Services client</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-      <div class="icons">
-        <span>🛒</span>
-        <span>❤️</span>
+      <div class="d-flex">
+        <span class="text-white me-3" title="Panier">🛒</span>
+        <span class="text-white" title="Favoris">❤️</span>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- Section présentation -->
-  <section class="presentation">
-    <h1>Qui sommes-nous ?</h1>
-    <p>VetShop est une boutique de vêtements en ligne fondée par des passionnés de mode. Nous croyons en une mode accessible, durable et stylée. Notre équipe travaille chaque jour pour vous proposer les dernières tendances à prix abordables.</p>
-    <img src="assets/images/equipe.jpg" alt="Équipe VetShop" />
+  <section class="container py-5 presentation">
+    <h1 class="text-center mb-4">Qui sommes-nous ?</h1>
+    <p class="text-center mx-auto" style="max-width: 800px;">
+      VetShop est une boutique de vêtements en ligne fondée par des passionnés de mode. Nous croyons en une mode accessible, durable et stylée. Notre équipe travaille chaque jour pour vous proposer les dernières tendances à prix abordables.
+    </p>
+    <div class="text-center mt-4">
+      <img src="assets/images/equipe.jpg" alt="Photo de l'équipe VetShop" class="img-fluid rounded">
+    </div>
   </section>
 
   <!-- Section valeurs -->
-  <section class="valeurs">
-    <h2>Nos valeurs</h2>
-    <ul>
+  <section class="container py-5 valeurs">
+    <h2 class="text-center mb-4">Nos valeurs</h2>
+    <ul class="list-unstyled text-center">
       <li>🌱 Mode responsable</li>
       <li>🚚 Livraison rapide</li>
       <li>👕 Qualité garantie</li>
@@ -45,48 +54,48 @@
   </section>
 
   <!-- Témoignages clients -->
-  <section class="testimonials">
-    <h2>Ce que disent nos clients</h2>
-    <div class="avis">
-      <div class="temoignage">
-        <img src="assets/images/client2.jpg" alt="Sophie M." />
-        <blockquote>
-          “Super boutique ! Livraison rapide et vêtements top qualité.”
-          <cite>– Sophie M.</cite>
+  <section class="container py-5 testimonials">
+    <h2 class="text-center mb-4">Ce que disent nos clients</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4 temoignage text-center">
+        <img src="assets/images/sophie.jpg" alt="Sophie M." class="img-fluid rounded mb-3" style="max-width: 130px;">
+        <blockquote class="blockquote">
+          <p>“Super boutique ! Livraison rapide et vêtements top qualité.”</p>
+          <footer class="blockquote-footer">Sophie M.</footer>
         </blockquote>
       </div>
-      <div class="temoignage">
-        <img src="assets/images/client1.jpg" alt="Karim B." />
-        <blockquote>
-          “J’adore leurs collections, je recommande !”
-          <cite>– Karim B.</cite>
+      <div class="col-md-6 mb-4 temoignage text-center">
+        <img src="assets/images/karimm.jpg" alt="Karim B." class="img-fluid rounded mb-3" style="max-width: 120px;">
+        <blockquote class="blockquote">
+          <p>“J’adore leurs collections, je recommande !”</p>
+          <footer class="blockquote-footer">Karim B.</footer>
         </blockquote>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div>
+  <footer class="bg-dark text-light py-4">
+    <div class="container footer-content d-flex justify-content-between flex-wrap">
+      <div class="mb-3">
         <h4>Mentions Légales</h4>
         <p>&copy; 2025 VetShop</p>
       </div>
-      <div>
+      <div class="mb-3">
         <h4>Liens</h4>
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Conditions</a></li>
+        <ul class="list-unstyled">
+          <li><a class="text-decoration-none text-light" href="index.html">Accueil</a></li>
+          <li><a class="text-decoration-none text-light" href="contact.html">Contact</a></li>
+          <li><a class="text-decoration-none text-light" href="#">Conditions</a></li>
         </ul>
       </div>
-      <div>
+      <div class="mb-3">
         <h4>Suivez-nous</h4>
         <p>Facebook | Instagram | Twitter</p>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
