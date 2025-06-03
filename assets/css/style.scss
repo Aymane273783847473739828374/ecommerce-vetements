@@ -28,39 +28,34 @@ body {
 // ====================
 // NAVBAR
 // ====================
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: $primary-color;
-  padding: 1rem 2rem;
+.custom-navbar {
+  background-color: $primary-color;
   color: white;
+  padding: 1rem 2rem;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+  a.nav-link {
+    color: white;
+    padding: 0.5rem 1rem;
 
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+    &.active {
+      font-weight: bold;
+    }
 
-    li a {
-      color: white;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    &:hover {
+      text-decoration: underline;
     }
   }
 
-  .icons span {
-    margin-left: 10px;
-    cursor: pointer;
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
   }
 }
+
 // ------------------------------
 // Style NAV quand scroll
 // ------------------------------
