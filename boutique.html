@@ -29,7 +29,7 @@
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
       <div class="d-flex">
-        <span class="text-white me-3" title="Panier">🛒</span>
+        <a href="panier.html" class="text-white text-decoration-none me-3" title="Voir mon panier">🛒</a>
         <span class="text-white" title="Favoris">❤️</span>
       </div>
     </div>
@@ -39,19 +39,17 @@
   <div class="container py-5">
     <div class="row">
       <!-- Catégories -->
-   <aside class="col-lg-3 mb-4">
-  <div class="categories sticky-top">
-    <h4>Catégories</h4>
-    <ul class="list-group">
-      <li class="list-group-item"><a href="#tshirts">T-shirts</a></li>
-      <li class="list-group-item"><a href="#pantalons">Pantalons</a></li>
-      <li class="list-group-item"><a href="#vestes">Vestes</a></li>
-      <li class="list-group-item"><a href="#accessoires">Accessoires</a></li>
-    </ul>
-  </div>
-</aside>
-
-
+      <aside class="col-lg-3 mb-4">
+        <div class="categories sticky-top">
+          <h4>Catégories</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#tshirts">T-shirts</a></li>
+            <li class="list-group-item"><a href="#pantalons">Pantalons</a></li>
+            <li class="list-group-item"><a href="#vestes">Vestes</a></li>
+            <li class="list-group-item"><a href="#accessoires">Accessoires</a></li>
+          </ul>
+        </div>
+      </aside>
 
       <!-- Produits -->
       <div class="col-lg-9">
@@ -66,19 +64,29 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">T-shirt respirant</h5>
                   <p class="card-text">Confort léger et tissu technique idéal pour le sport.</p>
-                  <button class="btn btn-primary mt-auto">Ajouter au panier</button>
+                  <button class="btn btn-primary mt-auto add-to-cart"
+                    data-name="T-shirt respirant"
+                    data-price="29.99"
+                    data-image="assets/images/SH2.webp">
+                    Ajouter au panier
+                  </button>
                 </div>
               </div>
             </div>
 
-            <!-- Produit 9 -->
+            <!-- Produit 2 -->
             <div class="col-md-6 col-lg-4">
               <div class="card h-100">
                 <img src="assets/images/SH.webp" class="card-img-top" alt="T-shirt coton bio">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">T-shirt coton bio</h5>
                   <p class="card-text">Doux, écologique et durable.</p>
-                  <button class="btn btn-primary mt-auto">Ajouter au panier</button>
+                  <button class="btn btn-primary mt-auto add-to-cart"
+                    data-name="T-shirt coton bio"
+                    data-price="34.99"
+                    data-image="assets/images/SH.webp">
+                    Ajouter au panier
+                  </button>
                 </div>
               </div>
             </div>
@@ -89,26 +97,34 @@
         <div id="pantalons" class="mb-5">
           <h2>Pantalons</h2>
           <div class="row">
-            <!-- Produit 4 -->
             <div class="col-md-6 col-lg-4">
               <div class="card h-100">
                 <img src="assets/images/JOG2.webp" class="card-img-top" alt="Jogging performance">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Jogging performance</h5>
                   <p class="card-text">Matière stretch, idéal pour le running quotidien.</p>
-                  <button class="btn btn-primary mt-auto">Ajouter au panier</button>
+                  <button class="btn btn-primary mt-auto add-to-cart"
+                    data-name="Jogging performance"
+                    data-price="49.99"
+                    data-image="assets/images/JOG2.webp">
+                    Ajouter au panier
+                  </button>
                 </div>
               </div>
             </div>
 
-            <!-- Produit 8 -->
             <div class="col-md-6 col-lg-4">
               <div class="card h-100">
                 <img src="assets/images/PANT.webp" class="card-img-top" alt="Pantalon training">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Pantalon training</h5>
                   <p class="card-text">Polyvalent pour sport ou détente.</p>
-                  <button class="btn btn-primary mt-auto">Ajouter au panier</button>
+                  <button class="btn btn-primary mt-auto add-to-cart"
+                    data-name="Pantalon training"
+                    data-price="39.99"
+                    data-image="assets/images/PANT.webp">
+                    Ajouter au panier
+                  </button>
                 </div>
               </div>
             </div>
@@ -119,14 +135,18 @@
         <div id="vestes" class="mb-5">
           <h2>Vestes</h2>
           <div class="row">
-            <!-- Produit 7 -->
             <div class="col-md-6 col-lg-4">
               <div class="card h-100">
                 <img src="assets/images/VESTE.webp" class="card-img-top" alt="Veste imperméable">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Veste imperméable</h5>
                   <p class="card-text">Protection coupe-vent et capuche ajustable.</p>
-                  <button class="btn btn-primary mt-auto">Ajouter au panier</button>
+                  <button class="btn btn-primary mt-auto add-to-cart"
+                    data-name="Veste imperméable"
+                    data-price="59.99"
+                    data-image="assets/images/VESTE.webp">
+                    Ajouter au panier
+                  </button>
                 </div>
               </div>
             </div>
@@ -137,38 +157,50 @@
         <div id="accessoires" class="mb-5">
           <h2>Accessoires</h2>
           <div class="row">
-            <!-- Produit 2 -->
             <div class="col-md-6 col-lg-4">
               <div class="card h-100">
                 <img src="assets/images/SHO2.webp" class="card-img-top" alt="Short mixte">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Short mixte</h5>
                   <p class="card-text">Design unisexe et respirabilité optimale.</p>
-                  <button class="btn btn-primary mt-auto">Ajouter au panier</button>
+                  <button class="btn btn-primary mt-auto add-to-cart"
+                    data-name="Short mixte"
+                    data-price="24.99"
+                    data-image="assets/images/SHO2.webp">
+                    Ajouter au panier
+                  </button>
                 </div>
               </div>
             </div>
 
-            <!-- Produit 3 -->
             <div class="col-md-6 col-lg-4">
               <div class="card h-100">
                 <img src="assets/images/DEB2.webp" class="card-img-top" alt="Débardeur sport">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Débardeur sport</h5>
                   <p class="card-text">Parfait pour les séances de musculation ou yoga.</p>
-                  <button class="btn btn-primary mt-auto">Ajouter au panier</button>
+                  <button class="btn btn-primary mt-auto add-to-cart"
+                    data-name="Débardeur sport"
+                    data-price="19.99"
+                    data-image="assets/images/DEB2.webp">
+                    Ajouter au panier
+                  </button>
                 </div>
               </div>
             </div>
 
-            <!-- Produit 6 -->
             <div class="col-md-6 col-lg-4">
               <div class="card h-100">
                 <img src="assets/images/HOO.webp" class="card-img-top" alt="Hoodie sportswear">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Hoodie sportswear</h5>
                   <p class="card-text">Look urbain et chaud pour l’hiver.</p>
-                  <button class="btn btn-primary mt-auto">Ajouter au panier</button>
+                  <button class="btn btn-primary mt-auto add-to-cart"
+                    data-name="Hoodie sportswear"
+                    data-price="54.99"
+                    data-image="assets/images/HOO.webp">
+                    Ajouter au panier
+                  </button>
                 </div>
               </div>
             </div>
@@ -213,6 +245,23 @@
 
   <!-- JS Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+      button.addEventListener("click", () => {
+        const name = button.dataset.name;
+        const price = button.dataset.price;
+        const image = button.dataset.image;
+
+        const product = { name, price, image };
+
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push(product);
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        window.location.href = "panier.html";
+      });
+    });
+  </script>
 
 </body>
 </html>

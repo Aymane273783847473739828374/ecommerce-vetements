@@ -22,5 +22,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// Apparition des éléments au scroll
+const reveals = document.querySelectorAll(".reveal");
+
+function animateOnScroll() {
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const revealPoint = 100;
+
+    if (elementTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", animateOnScroll);
+window.addEventListener("load", animateOnScroll);
+
 
 
