@@ -356,4 +356,69 @@ footer {
     justify-content: space-between;
   }
 }
+// ====================
+// ANIMATIONS SUR LES CARTES PRODUIT
+// ====================
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.3s;
+
+  &:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.3);
+    filter: brightness(1.05) saturate(1.1);
+  }
+
+  .card-img-top {
+    transition: transform 0.6s ease;
+    display: block;
+    width: 100%;
+  }
+
+  &:hover .card-img-top {
+    transform: scale(1.08);
+  }
+
+  .btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0));
+      transform: skewX(-30deg);
+      transition: left 0.4s ease;
+      z-index: 0;
+    }
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      transform: scale(1.05);
+    }
+
+    &:hover::before {
+      left: 100%;
+    }
+  }
+}
+
+// Animation fade-in pour les cartes
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
