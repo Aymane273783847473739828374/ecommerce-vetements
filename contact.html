@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - VetShop</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
-  <link rel="stylesheet" href="assets/css/style.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- Navbar Bootstrap -->
+  <!-- Navbar -->
   <nav class="navbar custom-navbar navbar-expand-lg px-4">
-
     <a class="navbar-brand" href="#">VetShop</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVetShop" aria-controls="navbarVetShop" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVetShop">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarVetShop">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
@@ -24,6 +22,7 @@
         <li class="nav-item"><a class="nav-link" href="boutique.html">Boutique</a></li>
         <li class="nav-item"><a class="nav-link" href="services-client.html">Services client</a></li>
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+        
       </ul>
       <div class="d-flex">
         <a href="panier.html" class="text-white text-decoration-none me-3" title="Voir mon panier">🛒</a>
@@ -34,45 +33,53 @@
 
   <!-- Formulaire de contact -->
   <section class="container py-5 contact-form">
-    <h1 class="mb-4">Contactez-nous</h1>
-    <form>
-      <div class="mb-3">
-        <label for="prenom" class="form-label">Prénom</label>
-        <input type="text" id="prenom" name="prenom" class="form-control" required >
-      </div>
+    <div class="col-lg-8 mx-auto">
+      <div class="card p-4 reveal">
+        <h2 class="text-center mb-4">
+          <span class="me-2">✉️</span>Contactez-nous
+        </h2>
+        <form>
+          <div class="mb-3">
+            <label for="prenom" class="form-label">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" class="form-control" required placeholder="Votre prénom">
+          </div>
 
-      <div class="mb-3">
-        <label for="nom" class="form-label">Nom</label>
-        <input type="text" id="nom" name="nom" class="form-control" required >
-      </div>
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom *</label>
+            <input type="text" id="nom" name="nom" class="form-control" required placeholder="Votre nom">
+          </div>
 
-      <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" id="email" name="email" class="form-control" required >
-      </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail *</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="exemple@email.com">
+          </div>
 
-      <div class="mb-3">
-        <label for="service" class="form-label">Service souhaité</label>
-        <select id="service" name="service" class="form-select" required>
-          <option value="" selected>-- Choisissez un service --</option>
-          <option value="livraison">Livraison</option>
-          <option value="paiement">Paiement</option>
-          <option value="sav">Service après-vente</option>
-          <option value="retours">Retours</option>
-        </select>
-      </div>
+          <div class="mb-3">
+            <label for="service" class="form-label">Service souhaité</label>
+            <select id="service" name="service" class="form-select" required>
+              <option value="" selected disabled>-- Choisissez un service --</option>
+              <option value="livraison">Livraison</option>
+              <option value="paiement">Paiement</option>
+              <option value="sav">Service après-vente</option>
+              <option value="retours">Retours</option>
+            </select>
+          </div>
 
-      <div class="mb-3">
-        <label for="commentaire" class="form-label">Commentaire</label>
-        <textarea id="commentaire" name="commentaire" rows="5" class="form-control" required></textarea>
-      </div>
+          <div class="mb-3">
+            <label for="commentaire" class="form-label">Commentaire</label>
+            <textarea id="commentaire" name="commentaire" rows="5" class="form-control" required placeholder="Écrivez votre message ici..."></textarea>
+          </div>
 
-      <button type="submit" class="btn btn-primary">Envoyer</button>
-    </form>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-4">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
+  <footer class="bg-dark text-light py-4 mt-5">
     <div class="container footer-content d-flex justify-content-between flex-wrap">
       <div class="mb-3">
         <h4>Mentions Légales</h4>
@@ -93,7 +100,9 @@
     </div>
   </footer>
 
+  <!-- Bootstrap JS + Ton script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
+
