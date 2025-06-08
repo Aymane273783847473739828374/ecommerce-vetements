@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boutique - VetShop</title>
-  <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
     html {
       scroll-behavior: smooth;
@@ -27,7 +27,6 @@
         <li class="nav-item"><a class="nav-link active" href="boutique.html">Boutique</a></li>
         <li class="nav-item"><a class="nav-link" href="services-client.html">Services client</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        
       </ul>
       <div class="d-flex">
         <a href="panier.html" class="text-white text-decoration-none me-3" title="Voir mon panier">🛒</a>
@@ -38,7 +37,8 @@
 
   <!-- Contenu -->
   <div class="container py-5">
-    <div class="row">
+    <div class="row main-layout">
+
       <!-- Catégories -->
       <aside class="col-lg-3 mb-4">
         <div class="categories sticky-top">
@@ -65,12 +65,7 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">T-shirt respirant</h5>
                   <p class="card-text">Confort léger et tissu technique idéal pour le sport.</p>
-                  <button class="btn btn-primary mt-auto add-to-cart"
-                    data-name="T-shirt respirant"
-                    data-price="29.99"
-                    data-image="assets/images/SH2.webp">
-                    Ajouter au panier
-                  </button>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="T-shirt respirant" data-price="29.99" data-image="assets/images/SH2.webp">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -82,12 +77,19 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">T-shirt coton bio</h5>
                   <p class="card-text">Doux, écologique et durable.</p>
-                  <button class="btn btn-primary mt-auto add-to-cart"
-                    data-name="T-shirt coton bio"
-                    data-price="34.99"
-                    data-image="assets/images/SH.webp">
-                    Ajouter au panier
-                  </button>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="T-shirt coton bio" data-price="34.99" data-image="assets/images/SH.webp">Ajouter au panier</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/images/SH4.webp" class="card-img-top" alt="T-shirt oversize">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">T-shirt oversize</h5>
+                  <p class="card-text">Coupe ample, style moderne et confort assuré.</p>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="T-shirt oversize" data-price="32.99" data-image="assets/images/SH3.webp">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -104,12 +106,7 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Jogging performance</h5>
                   <p class="card-text">Matière stretch, idéal pour le running quotidien.</p>
-                  <button class="btn btn-primary mt-auto add-to-cart"
-                    data-name="Jogging performance"
-                    data-price="49.99"
-                    data-image="assets/images/JOG2.webp">
-                    Ajouter au panier
-                  </button>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Jogging performance" data-price="49.99" data-image="assets/images/JOG2.webp">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -120,12 +117,19 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Pantalon training</h5>
                   <p class="card-text">Polyvalent pour sport ou détente.</p>
-                  <button class="btn btn-primary mt-auto add-to-cart"
-                    data-name="Pantalon training"
-                    data-price="39.99"
-                    data-image="assets/images/PANT.webp">
-                    Ajouter au panier
-                  </button>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Pantalon training" data-price="39.99" data-image="assets/images/PANT.webp">Ajouter au panier</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/images/PANT2.webp" class="card-img-top" alt="Pantalon cargo">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Pantalon cargo</h5>
+                  <p class="card-text">Fonctionnel avec poches latérales. Style urbain.</p>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Pantalon cargo" data-price="44.99" data-image="assets/images/PANT2.webp">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -142,12 +146,31 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Veste imperméable</h5>
                   <p class="card-text">Protection coupe-vent et capuche ajustable.</p>
-                  <button class="btn btn-primary mt-auto add-to-cart"
-                    data-name="Veste imperméable"
-                    data-price="59.99"
-                    data-image="assets/images/VESTE.webp">
-                    Ajouter au panier
-                  </button>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Veste imperméable" data-price="59.99" data-image="assets/images/VESTE.webp">Ajouter au panier</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/images/VEST2.webp" class="card-img-top" alt="Veste légère">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Veste légère</h5>
+                  <p class="card-text">Idéale pour la mi-saison et les sorties sportives.</p>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Veste légère" data-price="44.99" data-image="assets/images/VESTE2.webp">Ajouter au panier</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/images/VEST3.webp" class="card-img-top" alt="Veste polaire">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Veste polaire</h5>
+                  <p class="card-text">Chaleur optimale pour les journées froides.</p>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Veste polaire" data-price="64.99" data-image="assets/images/VESTE3.webp">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -164,12 +187,7 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Short mixte</h5>
                   <p class="card-text">Design unisexe et respirabilité optimale.</p>
-                  <button class="btn btn-primary mt-auto add-to-cart"
-                    data-name="Short mixte"
-                    data-price="24.99"
-                    data-image="assets/images/SHO2.webp">
-                    Ajouter au panier
-                  </button>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Short mixte" data-price="24.99" data-image="assets/images/SHO2.webp">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -180,12 +198,7 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Débardeur sport</h5>
                   <p class="card-text">Parfait pour les séances de musculation ou yoga.</p>
-                  <button class="btn btn-primary mt-auto add-to-cart"
-                    data-name="Débardeur sport"
-                    data-price="19.99"
-                    data-image="assets/images/DEB2.webp">
-                    Ajouter au panier
-                  </button>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Débardeur sport" data-price="19.99" data-image="assets/images/DEB2.webp">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -196,12 +209,7 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Hoodie sportswear</h5>
                   <p class="card-text">Look urbain et chaud pour l’hiver.</p>
-                  <button class="btn btn-primary mt-auto add-to-cart"
-                    data-name="Hoodie sportswear"
-                    data-price="54.99"
-                    data-image="assets/images/HOO.webp">
-                    Ajouter au panier
-                  </button>
+                  <button class="btn btn-primary mt-auto add-to-cart" data-name="Hoodie sportswear" data-price="54.99" data-image="assets/images/HOO.webp">Ajouter au panier</button>
                 </div>
               </div>
             </div>

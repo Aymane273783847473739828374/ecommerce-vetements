@@ -715,6 +715,24 @@ footer {
     }
   }
 }
+/* Assure le sticky du menu */
+.categories {
+  position: sticky;
+  top: 100px; // adapte si ta navbar est plus grande
+  align-self: flex-start;
+  z-index: 100;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  min-width: 220px;
+}
+
+
+
+
+
+
 
 
 

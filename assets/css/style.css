@@ -488,7 +488,9 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -543,8 +545,9 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -567,7 +570,9 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
+
 
 output {
   display: inline-block;
@@ -12548,4 +12553,17 @@ footer .footer-content ul li a:hover {
 }
 .dark-mode .timeline .timeline-content p {
   color: #ddd;
+}
+
+/* Assure le sticky du menu */
+.categories {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  z-index: 100;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  min-width: 220px;
 }/*# sourceMappingURL=style.css.map */
