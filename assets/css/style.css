@@ -487,9 +487,10 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  appearance: textfield;
+  appearance: button;
   -webkit-appearance: button;
 }
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -548,6 +549,9 @@ legend + * {
   appearance: textfield;
 -webkit-appearance: textfield;
 
+  outline-offset: -2px;
+}
+
 /* rtl:raw:
 [type="tel"],
 [type="url"],
@@ -566,8 +570,10 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
-  appearance: textfield;
+  appearance: button;
+-webkit-appearance: button;
+
+  
 }
 
 output {
@@ -12563,8 +12569,32 @@ footer .footer-content ul li a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   min-width: 220px;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Pour corriger le texte principal */
+body.dark-mode h1, body.dark-mode .h1,
+body.dark-mode p,
+body.dark-mode .fw-bold {
+  color: #f0f0f0;
+}
+
+/* Pour le bouton outline dans dark mode */
+body.dark-mode .btn-outline-primary {
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
 /* Pour corriger la navbar si elle a un fond clair */
 body.dark-mode .navbar {
   background-color: #1e1e1e !important;
   border-bottom: 1px solid #444;
-}}
+}/*# sourceMappingURL=style.css.map */
