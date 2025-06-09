@@ -487,10 +487,9 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
+  appearance: textfield;
   -webkit-appearance: button;
-  appearance: button;
 }
-
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -545,11 +544,9 @@ legend + * {
   height: auto;
 }
 
-[type="search"] {
-  -webkit-appearance: textfield;
+[type=search] {
   appearance: textfield;
-  outline-offset: -2px;
-}
+-webkit-appearance: textfield;
 
 /* rtl:raw:
 [type="tel"],
@@ -570,9 +567,8 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
-  appearance: button;
+  appearance: textfield;
 }
-
 
 output {
   display: inline-block;
@@ -12566,4 +12562,9 @@ footer .footer-content ul li a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   min-width: 220px;
-}/*# sourceMappingURL=style.css.map */
+}
+/* Pour corriger la navbar si elle a un fond clair */
+body.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+  border-bottom: 1px solid #444;
+}}

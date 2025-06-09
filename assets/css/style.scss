@@ -728,6 +728,13 @@ footer {
   min-width: 220px;
 }
 
+/* Pour corriger la navbar si elle a un fond clair */
+body.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+  border-bottom: 1px solid #444;
+}
+
+
 
 
 
