@@ -1,3 +1,4 @@
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // ====================
@@ -237,19 +238,9 @@ section {
   }
 }
 
-// ====================
-// ASIDE / CATEGORIES
-// ====================
-.categories {
-  position: sticky;
-  top: 100px; // Ajuste selon la hauteur de ta navbar
-  z-index: 100;
-  background: white;
-  padding: 1rem;
-  margin: 2rem;
-  border-radius: 5px;
 
-}
+
+
 
 
 // ====================
@@ -718,7 +709,7 @@ footer {
 /* Assure le sticky du menu */
 .categories {
   position: sticky;
-  top: 100px; // adapte si ta navbar est plus grande
+  top: 100px;
   align-self: flex-start;
   z-index: 100;
   background-color: #1e1e1e;
@@ -726,6 +717,10 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   min-width: 220px;
+
+  h4 {
+    color: white;
+  }
 }
 
 /* Pour corriger la navbar si elle a un fond clair */
