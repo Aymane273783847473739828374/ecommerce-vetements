@@ -6,6 +6,7 @@
   <title>Boutique - VetShop</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     html {
       scroll-behavior: smooth;
@@ -41,16 +42,17 @@
 
       <!-- Catégories -->
       <aside class="col-lg-3 mb-4">
-        <div class="categories sticky-top">
-          <h4>Catégories</h4>
-          <ul class="list-group">
-            <li class="list-group-item"><a href="#tshirts">T-shirts</a></li>
-            <li class="list-group-item"><a href="#pantalons">Pantalons</a></li>
-            <li class="list-group-item"><a href="#vestes">Vestes</a></li>
-            <li class="list-group-item"><a href="#accessoires">Accessoires</a></li>
-          </ul>
-        </div>
-      </aside>
+  <div class="categories sticky-top">
+    <h4>Catégories</h4>
+    <div class="d-grid gap-2">
+      <a href="#tshirts" class="btn btn-outline-primary">T-shirts</a>
+      <a href="#pantalons" class="btn btn-outline-primary">Pantalons</a>
+      <a href="#vestes" class="btn btn-outline-primary">Vestes</a>
+      <a href="#accessoires" class="btn btn-outline-primary">Accessoires</a>
+    </div>
+  </div>
+</aside>
+
 
       <!-- Produits -->
       <div class="col-lg-9">
@@ -246,9 +248,14 @@
         </ul>
       </div>
       <div class="mb-3">
-        <h4>Suivez-nous</h4>
-        <p>Facebook | Instagram | Twitter</p>
-      </div>
+  <h4>Suivez-nous</h4>
+  <div class="social-icons">
+    <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
+  </div>
+</div>
+
     </div>
   </footer>
 

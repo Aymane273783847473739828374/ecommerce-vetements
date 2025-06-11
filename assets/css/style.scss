@@ -87,10 +87,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1);
+    transform: scale(0.9);
     animation: zoomIn 20s ease-in-out infinite alternate;
     z-index: 0;
-  }
+}
+
 
   .overlay {
     position: absolute;
@@ -727,6 +728,16 @@ footer {
 body.dark-mode .navbar {
   background-color: #1e1e1e !important;
   border-bottom: 1px solid #444;
+}
+.categories a.btn {
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
 }
 
 
