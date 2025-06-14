@@ -739,6 +739,21 @@ body.dark-mode .navbar {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
 }
+.navbar-toggler {
+  border: 2px solid #f5f5f5; // Couleur de l'entourage
+  border-radius: 12px;        // Bord arrondi
+  padding: 8px 10px;          // Taille interne
+  background-color: transparent; // Fond transparent
+  transition: all 0.3s ease;  // Petite animation sur hover
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1); // Petit fond au survol
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 
 
